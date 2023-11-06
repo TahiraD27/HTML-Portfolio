@@ -490,7 +490,7 @@ nav {
 }
 
 .services__title {
-    font-size: var(--h3-font-size);
+    font-size: var(--h2-font-size);
     margin-bottom: 2.5rem;
 }
 
@@ -517,13 +517,11 @@ nav {
     position: fixed;
     inset: 0;
     background-color: rgba(249, 241, 233, 0.45);
-
-    ;
     padding: 2rem 1rem;
     display: grid;
     place-items: center;
     visibility: hidden;
-    /* opacity: 0; */
+    opacity: 0;
     transition: .4s;
     z-index: var(--z-modal);
 }
@@ -540,7 +538,7 @@ nav {
 }
 
 .services__modal-title {
-    font-size: var(--h3-font-size);
+    font-size: var(--h2-font-size);
     color: var(--text-color-light);
     margin-bottom: 1rem;
 }
@@ -580,7 +578,10 @@ nav {
 }
 
 /* Active modal */
-
+.active-modal {
+    opacity: 1;
+    visibility: visible;
+}
 
 /*====== WORKS ======*/
 
