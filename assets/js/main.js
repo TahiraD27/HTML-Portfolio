@@ -49,6 +49,24 @@ const sendEmail = (e) =>{
         contactMessage.textContent = 'Write all the input fields 📥'
     }else{
         // serviceID - templateID - #form - publicKey
+        emailjs.sendForm('service_zkb5hmi','template_r39syq8','#contact-form','3DgU2HRZVEMEwHqT5')
+            .then(() =>{
+                // Show message and add color
+                contactMessage.classList.add('color-blue')
+                contactMessage.textContent = 'Message sent ✅'
+
+                // Remove message after five seconds
+                setTimeout(() =>{
+                    contactMessage.textContent = ''
+                }, 5000)
+            }, (error) =>{
+                alert('OOPS! SOMETHING HAS FAILED...', error)
+            })
+
+        // To clear the input field
+        contactName.value = ''
+        contactEmail.value = ''
+        contactProject.value = ''
     }
 }
 contactForm.addEventListener('submit', sendEmail)
