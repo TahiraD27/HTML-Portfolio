@@ -25,8 +25,8 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link">
-                            <i class="ri-home-5-line"></i> Home
+                        <a href="#about" class="nav__link">
+                            <i class="ri-information-line"></i> About
                         </a>
                     </li>
 
@@ -49,8 +49,8 @@
                     </li>
 
                     <li class="nav__item">
-                        <a href="#projects" class="nav__link">
-                            <i class="ri-file-image-line"></i> Projects
+                        <a href="#work" class="nav__link">
+                            <i class="ri-file-image-line"></i> Works
                         </a>
                     </li>
 
@@ -94,7 +94,7 @@
                         P O R T F O L I O <br>
                     </p>
 
-                    <a href="#home" class="button__link">
+                    <a href="#about" class="button__link">
                         About Me <i class="ri-arrow-right-line"></i>
                     </a>
                 </div>
@@ -214,8 +214,8 @@
 
         <!--========== SKILLS ==========-->
         <section class="skills section" id="skills">
-            <h2 class="section__title">Skills</h2>
-            <span class="section__subtitle">My favorite skills</span>
+            <h2 class="section__title">What Can I Do</h2>
+            <span class="section__subtitle">My Skills</span>
 
             <div class="skills__container container grid section__border">
                 
@@ -305,8 +305,8 @@
 
         <!--========== SERVICES ==========-->
         <section class="services section" id="services">
+            <h2 class="section__title">How Can I Help</h2>
             <span class="section__subtitle">My Services</span>
-            <h2 class="section__title">What I Offer</h2>
 
             <div class="services__container container grid">
                 <div class="services__card">
@@ -421,13 +421,116 @@
             </div>
         </section>
 
-        <!--========== WORKS ==========-->
-        <section class="works section" id="works">
+        <!--========== WORK ==========-->
+        <section class="work section" id="work">
+            <h2 class="section__title">What Have I Done</h2>
+            <span class="section__subtitle">My Works</span>
 
+            <div class="work__filters">
+                <span class="work__item active-work" data-filter="all">All</span>
+                <span class="work__item" data-filter=".web">Web</span>
+                <span class="work__item" data-filter=".mobile">Mobile</span>
+                <span class="work__item" data-filter=".design">Design</span>
+            </div>
+
+            <div class="work__container container grid">
+                <div class="work__card mix web">
+                    <img src="assets/img/work1.jpg" alt="Work Image" class="work__img">
+
+                    <h3 class="work__title">Web design</h3>
+
+                    <a href="" class="work__button">
+                        Demo <i class="ri-arrow-right-line work__icon"></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix design">
+                    <img src="assets/img/work2.jpg" alt="Work Image" class="work__img">
+
+                    <h3 class="work__title">Brand design</h3>
+
+                    <a href="" class="work__button">
+                        Demo <i class="ri-arrow-right-line work__icon"></i>
+                    </a>
+                </div>
+
+                <div class="work__card mix mobile">
+                    <img src="assets/img/work3.jpg" alt="Work Image" class="work__img">
+
+                    <h3 class="work__title">Mobile app</h3>
+
+                    <a href="" class="work__button">
+                        Demo <i class="ri-arrow-right-line work__icon"></i>
+                    </a>
+                </div>
+            </div>
         </section>
         <!--========== CONTACT ==========-->
         <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in Touch</span>
 
+            <div class="contact__container container grid section__border">
+                <div class="contact__content">
+                    <h3 class="contact__title">
+                        <i class="ri-chat-3-line"></i>Talk to me
+                    </h3>
+
+                    <div class="contact__info">
+                        <div class="contact__data">
+                            <span class="contact__data-title">Email</span>
+                            <span class="contact__data-info">tahiradufrense27@gmail.com</span>
+                        </div>
+
+                        <div class="contact__data">
+                            <span class="contact__data-title">Whatsapp</span>
+                            <span class="contact__data-info">+248 2557287</span>
+
+                            <a href="https://wa.me/2482557287?text=I'm%20interested%20in%20starting%20a%20project%20with%20you." target="_blank" class="contact__button">
+                                Write me <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__data">
+                            <span class="contact__data-title">Instagram</span>
+                            <span class="contact__data-info">@t.dufrense</span>
+
+                            <a href="https://www.instagram.com/t.dufrense/?hl=en" target="_blank" class="contact__button">
+                                Write me <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact__content">
+                    <h3 class="contact__title">
+                        <i class="ri-send-plane-line"></i> Write me your project
+                    </h3>
+
+                    <form action="" class="contact__form" id="contact-form">
+                        <div class="contact__form-div">
+                            <lable class="contact__form-tag">Full Name</lable>
+                            <input type="text" name="user_name" required placeholder="Write your full name" class="contact__form-input" id="contact-name">
+                        </div>
+
+                        <div class="contact__form-div">
+                            <lable class="contact__form-tag">Email</lable>
+                            <input type="email" name="user_email" required placeholder="Write your email" class="contact__form-input" id="contact-email">
+                        </div>
+
+                        <div class="contact__form-div contact__form-area">
+                            <lable class="contact__form-tag">Project</lable>
+                            <textarea name="user_project" placeholder="Write your project" id="contact-project" class="contact__form-input"></textarea>
+                        </div>
+
+                        <p class="contact__message" id="contact-message"></p>
+
+                        <button type="submit" class="contact__button">
+                            Submit <i class="ri-arrow-right-up-line"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
         </section>
 
     </main>
@@ -438,8 +541,18 @@
     </footer>
 
     <!--========== SCROLL UP ==========-->
-    
+    <script src=""></script>
 
+    <!--========== SCROLLREVEAL ==========-->
+    <script src=""></script>
+    
+    <!--========== MIXITUP FILTER ==========-->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!--========== EMAIL JS ==========-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!--========== MAIN JS ==========-->
     <script src="assets/js/main.js"></script>
 </body>
 </html>
