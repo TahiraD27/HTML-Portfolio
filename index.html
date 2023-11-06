@@ -3,107 +3,443 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./assets/images/website_logo.png">
-    <title>Tahira: Web Developer</title>
+    <!-- Icons Link -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/logo_img.jpg" type="image/x-icon">
+
+    <title>Tahira Dufrense - Portfolio</title>
 </head>
 <body>
-    <h1>Tahira Dufrense</h1>
-    <img src="./assets/images/resume_photo.png" height="150">
-    <h3>Web Developer</h3>
+    <!--========== HEADER ==========-->
+    <header class="header" id="header">
+        <nav>
+            <a href="#" class="nav__logo">
+                Tahira.
+            </a>
 
-    <h2><u>Summary</u></h2>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">
+                            <i class="ri-home-5-line"></i> Home
+                        </a>
+                    </li>
 
-    <p>
-        Currently studying at the <a href="http://www.sit.sc/">Seychelles Institute of Technology</a>, I am wish to pursue 
-        my dreams of becoming <br> a well settled Web Developer or possibly even a FullStack Engineer.
-    </p>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class="ri-trophy-line"></i> Skills
+                        </a>
+                    </li>
 
-    <hr>
+                    <li class="nav__item">
+                        <a href="#qualifications" class="nav__link">
+                            <i class="ri-book-open-line"></i> Qualifications
+                        </a>
+                    </li>
 
-    <h2><u>Education</u></h2>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">
+                            <i class="ri-briefcase-line"></i> Services
+                        </a>
+                    </li>
 
-    <h3>
-        Nation Diploma in Information System Engineering, <br>
-        Seychelles Institute Of Technology
-    </h3> 
-    <p>
-        2021 - 2023 <br>
-        <ul>
-            <li>Graduated as the Best Performer in the Course.</li>
-        </ul>
-    </p> 
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">
+                            <i class="ri-file-image-line"></i> Projects
+                        </a>
+                    </li>
 
-    <h3>Secondary Education, <br>
-        Beau Vallon Secondary
-    </h3> 
-    <p>
-        2016 - 2020 <br>
-        <ul>
-            <li>IGCSE in English as a Second Language.</li>
-            <li>IGCSE in ICT.</li>
-            <li>IGCSE in Mathematics.</li>
-            <li>IGCSE in Physics.</li>
-            <li>IGCSE in Chemistry.</li>
-            <li>IGCSE in Geography.</li>
-            <li>French A2.</li>
-        </ul>
-    </p>
-    
-    <hr>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="ri-chat-3-line"></i> Contact
+                        </a>
+                    </li>
+                </ul>
 
-    <h2><u>Skills</u></h2>
+                <!-- Close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
 
-    <h3>
-        Interpersonal Skills
-    </h3>
-    <p>
-        <ul>
-            <li>Effective Communication</li>
-            <li>Teamwork</li>
-            <li>Critical Thinking</li>
-            <li>Dependability and Responsibility</li>
-        </ul>
-    </p>
+            <div class="nav__buttons">
+                <!-- These change button -->
+                <!-- <i class="ri-moon-line change-theme" id="theme-button"></i> -->
 
-    <h3>
-        Programming Languages
-    </h3>
-    <p>
-        <ul>
-            <li>HTML: ⭐⭐⭐⭐⭐</li>
-            <li>CSS: ⭐⭐⭐⭐⭐</li>
-            <li>Javascript: ⭐⭐⭐⭐</li>
-            <li>React.js: ⭐⭐⭐</li>
-            <li>Python: ⭐⭐⭐⭐</li>
-            <li>Node.js: ⭐⭐⭐</li>
-            <li>French A2.</li>
-        </ul>
-    </p>
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-4-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    <h3>
-        Software
-    </h3>
-    <p>
-        <ul>
-            <li>Figma: ⭐⭐⭐⭐⭐</li>
-            <li>Webflow: ⭐⭐⭐⭐</li>
-            <li>Bootstrap: ⭐⭐⭐⭐</li>
-            <li>GitHub: ⭐⭐⭐⭐</li>
-            <li>Adobe Photoshop: ⭐⭐⭐</li>
-        </ul>
-    </p>
+    <!--========== MAIN ==========-->
+    <main class="main">
+        <!--========== HOME ==========-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__title">
+                        Tahira <br>
+                        Dufrense
+                    </h1>
 
-    <hr>
+                    <p class="home__description">
+                        P O R T F O L I O <br>
+                    </p>
 
-    <footer>
-        <p>
-            <ul>
-                <li>Take a look at some of My <a href="./public/projects.html">Projects</a></li>
-                <li><a href="./public/contact.html">Contact Me</a></li>
-            </ul>
-            © Tahira Dufrense 2023
-        </p>
+                    <a href="#home" class="button__link">
+                        About Me <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+
+                <div class="home__images">
+                    <img src="assets/img/hero.jpg" alt="Hero image">
+                    <img src="assets/img/hero_image_2.jpg" alt="Hero image">
+                </div>
+            </div>
+        </section>
+        
+        <!--========== ABOUT ==========-->
+        <section class="about section" id="about">
+            <div class="about__container container grid section__border">
+                <div class="about__data grid">
+                    <h1 class="about__title">
+                        Hello, I am Tahira<br>
+                        Fullstack Developer<br>
+                        Based In Seychelles<br>
+                    </h1>
+
+                    <div class="about__blob grid">
+                        <div class="about__perfil">
+                            <img src="assets/img/about.jpg" alt="About image">
+                        </div>
+
+                        <img src="assets/img/shape-wawes.svg" alt="" class="about__shape-wawes">
+                        <img src="assets/img/shape-circle.svg" alt="" class="about__shape-circle">
+                    </div>
+
+                    <ul class="about__social">
+                        <a href="https://www.linkedin.com/" target="_blank" class="about__social-link">
+                            <i class="ri-linkedin-box-line"></i>
+                        </a>
+
+                        <a href="https://github.com/" target="_blank" class="about__social-link">
+                            <i class="ri-github-line"></i>
+                        </a>
+
+                        <a href="https://instagram.com/" target="_blank" class="about__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                    </ul>
+                </div>
+
+                <!--========== ABOUT INFO 1 ==========-->
+                <div class="about__info">
+                    <div>
+                        <h3 class="about__info-title">
+                            BIOGRAPHY
+                        </h3>
+                        <p class="about__info-description">
+                            Hi, I'm Tahira, a Fullstack Developer.
+                            Passionate about designing beautiful web
+                            interfaces. Based in Seychelles.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="about__info-title">
+                            CONTACT
+                        </h3>
+                        <p class="about__info-description">
+                            Mahe, Seychelles <br>
+                            tahiradufrense27@gmail.com <br>
+                            +248 2557287 <br>
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="about__info-title">
+                            SERVICES
+                        </h3>
+                        <p class="about__info-description">
+                            Website Design <br>
+                            UI/UX Design <br>
+                            Backend Development <br>
+                        </p>
+                    </div>
+                </div>
+
+                <!--========== ABOUT INFO 2 ==========-->
+                <div class="about__info">
+                    <div>
+                        <h3 class="about__info-title">
+                            YEARS OF EXPERIENCE
+                        </h3>
+
+                        <p class="about__info-number">
+                            3+
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="about__info-title">
+                            COMPLETED PROJECTS
+                        </h3>
+
+                        <p class="about__info-number">
+                            4+
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="about__info-title">
+                            COMPANIES WORKED
+                        </h3>
+
+                        <p class="about__info-number">
+                            3+
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--========== SKILLS ==========-->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <span class="section__subtitle">My favorite skills</span>
+
+            <div class="skills__container container grid section__border">
+                
+                <!--========== SKILLS 1 ==========-->
+                <div class="skills__content">
+                    <h3 class="skills__title">
+                        <i class="ri-braces-line"></i> Fullstack Developer
+                    </h3>
+
+                    <div class="skills__info">
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/html-1.svg" alt="Skills image">
+                            </div>
+
+                            <h3 class="skills__name">HTML</h3>
+                            <span class="skills__subtitle">Intermediate</span>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/css-3.svg" alt="Skills image">
+                            </div>
+
+                            <h3 class="skills__name">CSS</h3>
+                            <span class="skills__subtitle">Advanced</span>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/logo-javascript.svg" alt="Skills image">
+                            </div>
+
+                            <h3 class="skills__name">JavaScript</h3>
+                            <span class="skills__subtitle">Intermediate</span>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/php-1.svg" alt="Skills image">
+                            </div>
+
+                            <h3 class="skills__name">PHP</h3>
+                            <span class="skills__subtitle">Intermediate</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--========== SKILLS 2 ==========-->
+                <div class="skills__content">
+                    <h3 class="skills__title">
+                        <i class="ri-pantone-line"></i> Web Designer
+                    </h3>
+
+                    <div class="skills__info">
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/figma-1.svg" alt="Skills image">
+                            </div>
+
+                            <h3 class="skills__name">Figma</h3>
+                            <span class="skills__subtitle">Intermediate</span>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/adobe-xd-1.svg" alt="Skills image">
+                            </div>
+
+                            <h3 class="skills__name">Adobe XD</h3>
+                            <span class="skills__subtitle">Intermediate</span>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="assets/img/adobe-photoshop-2.svg" alt="Skills image">
+                            </div>
+
+                            <h3 class="skills__name">Photoshop</h3>
+                            <span class="skills__subtitle">Intermediate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--========== SERVICES ==========-->
+        <section class="services section" id="services">
+            <span class="section__subtitle">My Services</span>
+            <h2 class="section__title">What I Offer</h2>
+
+            <div class="services__container container grid">
+                <div class="services__card">
+                    <h3 class="services__title">UI/UX <br> Designer</h3>
+
+                    <span class="services__button">
+                        See More <i class="ri-arrow-right-line services__icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class="ri-close-line services__modal-close"></i>
+
+                            <h3 class="services__modal-title">UI/UX Designer</h3>
+                            <p class="services__modal-description">
+                                Services with more than 3 years of experience.
+                                Providing quality work to clients and companies.
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class="ri-check-line services__modal-icon"></i>
+                                    <p class="services__modal-info">
+                                        I develop the user interface.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class="ri-check-line services__modal-icon"></i>
+                                    <p class="services__modal-info">
+                                        Web page development.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class="ri-check-line services__modal-icon"></i>
+                                    <p class="services__modal-info">
+                                        I create ux element interactions.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class="ri-check-line services__modal-icon"></i>
+                                    <p class="services__modal-info">
+                                        I position your company brand.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class="ri-check-line services__modal-icon"></i>
+                                    <p class="services__modal-info">Design and mockups of products for companies.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__card">
+                    <h3 class="services__title">Visual <br> Designer</h3>
+
+                    <span class="services__button">
+                        See More <i class="ri-arrow-right-line services__icon"></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class="ri-close-line services__modal-close"></i>
+
+                            <h3 class="services__modal-title">Visual Designer</h3>
+                            <p class="services__modal-description">
+                                Services with more than 3 years of experience.
+                                Providing quality work to clients and companies.
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class="ri-check-line services__modal-icon"></i>
+                                    <p class="services__modal-info">
+                                        I develop the user interface.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class="ri-check-line services__modal-icon"></i>
+                                    <p class="services__modal-info">
+                                        Web page development.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class="ri-check-line services__modal-icon"></i>
+                                    <p class="services__modal-info">
+                                        I create ux element interactions.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class="ri-check-line services__modal-icon"></i>
+                                    <p class="services__modal-info">
+                                        I position your company brand.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class="ri-check-line services__modal-icon"></i>
+                                    <p class="services__modal-info">Design and mockups of products for companies.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--========== WORKS ==========-->
+        <section class="works section" id="works">
+
+        </section>
+        <!--========== CONTACT ==========-->
+        <section class="contact section" id="contact">
+
+        </section>
+
+    </main>
+
+    <!--========== FOOTER ==========-->
+    <footer class="footer section">
+
     </footer>
 
+    <!--========== SCROLL UP ==========-->
+    
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
