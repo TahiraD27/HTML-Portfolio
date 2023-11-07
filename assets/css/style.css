@@ -102,6 +102,7 @@ img {
 /*====== REUSABLE CSS CLASSES ======*/
 .container {
     max-width: 1024px;
+    margin-inline: 1.5rem;
     margin-right: 1.5rem;
     margin-left: 1.5rem;
 }
@@ -113,6 +114,11 @@ img {
 
 .section {
     padding: 4.5rem 0 2rem;
+}
+
+.section__border {
+    border-bottom: 1px solid var(--title-color);
+    padding-bottom: 3.5rem;
 }
 
 .section__title, .section__subtitle {
@@ -785,6 +791,60 @@ nav {
 
 .color-red {
     color: hsl(207, 56%, 45%);
+}
+
+/*====== FOOTER ======*/
+.footer__container {
+    padding: 3rem 0 7rem;
+    text-align: center;
+}
+
+.footer__title {
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-semi);
+    margin-bottom: 1rem;
+}
+
+.footer__list, .footer__social {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__list {
+    margin: 2.5rem 0;
+    column-gap: 2.5rem;
+}
+
+.footer__link {
+    color: var(--title-color);
+    transition: .4s;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+    color: var(--text-color-light);
+}
+
+.footer__social {
+    column-gap: 1.25rem;
+}
+
+.footer__social-link {
+    font-size: 1.25rem;
+    color: var(--title-color);
+    transition: transform .3s;
+}
+
+.footer__social-link:hover {
+    transform: translateY(-.15rem);
+    color: var(--text-color-light);
+}
+
+.footer__copy {
+    display: block;
+    margin-top: 4.5rem;
+    font-size: var(--smaller-font-size);
+    color: var(--title-color);
 }
 
 /*====== BREAKPOINTS ======*/
