@@ -1292,6 +1292,7 @@ body.dark-theme {
 
     .contact__form {
         row-gap: 2.5rem;
+        width: 600px;
     }
 
     .footer__list {
