@@ -568,110 +568,41 @@ body.dark-theme {
 
 /*====== SERVICES ======*/
 .services__container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    padding-top: 1rem;
+    row-gap: 2.5rem;
+    justify-content: center;
 }
 
 .services__card {
+    position: relative;
+    width: 228px;
+    height: 322px;
     background-color: var(--container-color);
-    padding: 3rem 1.5rem 1.5rem;
-    border-radius: 1rem;
-    transition: background .4s; /* For dark mode animation */
+    text-align: center;
+    padding: 3.5rem 1rem;
+    border-radius: 7.25rem;
+}
+
+.services__card i {
+    display: block;
+    font-size: 2rem;
+    color: var(--title-color);
+    margin-bottom: .75rem;
+    transition: transform .8s;
 }
 
 .services__title {
     font-size: var(--h2-font-size);
-    margin-bottom: 2.5rem;
+    font-weight: var(--font-semi);
+    margin-bottom: 1.5rem;
 }
 
-.services__button {
-    color: var(--text-color);
-    font-size: var(--small-font-size);
-    display: flex;
-    align-items: center;
-    column-gap: .25rem;
-    cursor: pointer;
-}
-
-.services__button:hover .services__icon {
-    transform: translateX(.25rem);
-}
-
-.services__icon {
-    font-size: 1rem;
-    transition: .3s;
-}
-
-/* Services modal */
-.services__modal {
-    position: fixed;
-    inset: 0;
-    background-color: rgba(249, 241, 233, 0.45);
-    padding: 2rem 1rem;
-    display: grid;
-    place-items: center;
-    visibility: hidden;
-    opacity: 0;
-    transition: .4s;
-    z-index: var(--z-modal);
-}
-
-.services__modal-content {
-    position: relative;
-    background-color: var(--container-color);
-    padding: 4.5rem 1.5rem 2.5rem;
-    border-radius: 1.5rem;
-}
-
-.services__modal-title, .services__modal-description {
-    text-align: center;
-}
-
-.services__modal-title {
-    font-size: var(--h2-font-size);
-    color: var(--text-color-light);
-    margin-bottom: 1rem;
-}
-
-.services__modal-description {
-    font-size: var(--small-font-size);
-    margin-bottom: 2rem;
-}
-
-.services__modal-list {
-    display: grid;
-    row-gap: .75rem;
-}
-
-.services__modal-item {
-    display: flex;
-    align-items: flex-start;
-    column-gap: .5rem;
-}
-
-.services__modal-icon {
-    font-size: 1.5rem;
-    color: var(--text-color-light);
-}
-
-.services__modal-info {
-    font-size: var(--small-font-size);
-}
-
-.services__modal-close {
+.services__border {
+    width: 248px;
+    height: 342px;
+    border: 1.8px solid var(--text-color-light);
+    border-radius: 7.75rem;
     position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
-    font-size: 1.5rem;
-    color: var(--title-color);
-    cursor: pointer;
-}
-
-/* Active modal */
-.active-modal {
-    opacity: 1;
-    visibility: visible;
+    inset: 0;
 }
 
 /*====== WORK ======*/
@@ -1017,11 +948,6 @@ body.dark-theme {
 
     .skills__info {
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    .services__container {
-        grid-template-columns: 145px;
-        justify-content: center;
     }
 
     .work__item {

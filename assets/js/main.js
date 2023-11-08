@@ -153,31 +153,8 @@ sr.reveal('.home__data, .footer__container')
 sr.reveal('.home__images', {delay: 600, origin: 'bottom'})
 sr.reveal('.about__data')
 sr.reveal('.about__info div', {delay: 600, origin: 'bottom', interval: 100})
-sr.reveal('.skills__content:nth-child(1), .services__card:nth-child(1), .contact__content:nth-child(1)', {origin: 'left'})
-sr.reveal('.skills__content:nth-child(2), .services__card:nth-child(2), .contact__content:nth-child(2)', {origin: 'right'})
-
-/*=============== SERVICES MODAL ===============*/
-const modalViews = document.querySelectorAll('.services__modal'),
-    modalBtns = document.querySelectorAll('.services__button'),
-    modalClose = document.querySelectorAll('.services__modal-close')
-
-let modal = function(modalClick){
-    modalViews[modalClick].classList.add('active-modal')
-}
-
-modalBtns.forEach((mb, i) =>{
-    mb.addEventListener('click', () =>{
-        modal(i)
-    })
-})
-
-modalClose.forEach((mc) =>{
-    mc.addEventListener('click', () =>{
-        modalViews.forEach((mv) =>{
-            mv.classList.remove('active-modal')
-        })
-    })
-})
+sr.reveal('.skills__content:nth-child(1), .contact__content:nth-child(1)', {origin: 'left'})
+sr.reveal('.skills__content:nth-child(2), .contact__content:nth-child(2)', {origin: 'right'})
 
 /*=============== MIXITUP FILTER PORTFOLIO ===============*/
 let mixerPortfolio = mixitup('.work__container', {
