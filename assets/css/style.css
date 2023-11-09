@@ -603,6 +603,19 @@ body.dark-theme {
     border-radius: 7.75rem;
     position: absolute;
     inset: 0;
+    left: -10px;
+    margin: auto;
+    z-index: -1;
+    transition: opacity .6s;
+    opacity: 0;
+}
+
+.services__card:hover i {
+    transform: rotateY(360deg);
+}
+
+.services__card:hover .services__border {
+    opacity: 1;
 }
 
 /*====== WORK ======*/
@@ -972,6 +985,14 @@ body.dark-theme {
     .skills__container {
         justify-content: center;
     }
+
+    .work__container {
+        justify-content: center;
+    }
+
+    .work__img {
+        width: 295px;
+    }
 }
 
 @media screen and (min-width: 767px) {
@@ -1005,12 +1026,16 @@ body.dark-theme {
         padding-right: 0;
     }
 
-    .skills__container, .contact__container {
+    .skills__container, .services__container, .contact__container {
         grid-template-columns: repeat(2, max-content);
     }
 
-    .skills__container {
+    .skills__container, .services__container {
         column-gap: 5rem;
+    }
+
+    .work__container {
+        grid-template-columns: repeat(3, max-content);
     }
 
     .contact__form {
@@ -1024,6 +1049,24 @@ body.dark-theme {
 }
 
 /* For large devices */
+@media screen and (min-width: 992px) {
+    .work__container {
+        gap: 3rem;
+    }
+
+    .work__card {
+        padding: 1.25rem;
+    }
+
+    .work__img {
+        margin-bottom: 1rem;
+    }
+
+    .work__title {
+        margin-bottom: .5rem;
+    }
+}
+
 @media screen and (min-width: 1023px) {
     
     .header {
@@ -1215,6 +1258,27 @@ body.dark-theme {
 
     .skills__info {
         gap: 3rem;
+    }
+
+    .services__container {
+        grid-template-columns: repeat(3, max-content);
+    }
+
+    .services__card {
+        width: 245px;
+        height: 345px;
+        border-radius: 7.6rem;
+        padding: 3.5rem 1.5rem;
+    }
+
+    .services__card i {
+        font-size: 2.5rem;
+    }
+
+    .services__border {
+        width: 265px;
+        height: 365px;
+        border-radius: 8.25rem;
     }
 
     .contact__title {

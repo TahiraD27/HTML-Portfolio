@@ -149,12 +149,13 @@ const sr = ScrollReveal({
     // reset: true /* Animations repeat */
 })
 
-sr.reveal('.home__data, .footer__container')
+sr.reveal('.home__data, .footer__container, .work__container')
 sr.reveal('.home__images', {delay: 600, origin: 'bottom'})
 sr.reveal('.about__data')
 sr.reveal('.about__info div', {delay: 600, origin: 'bottom', interval: 100})
 sr.reveal('.skills__content:nth-child(1), .contact__content:nth-child(1)', {origin: 'left'})
 sr.reveal('.skills__content:nth-child(2), .contact__content:nth-child(2)', {origin: 'right'})
+sr.reveal('.services__card, .work__filters', {interval: 100})
 
 /*=============== MIXITUP FILTER PORTFOLIO ===============*/
 let mixerPortfolio = mixitup('.work__container', {
